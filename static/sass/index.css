@@ -1,0 +1,24 @@
+body {
+  font-family: "PT Sans", sans-serif; }
+  body img {
+    height: 200px; }
+  body .allMenu {
+    margin-top: 50px; }
+    body .allMenu p {
+      font-weight: bolder;
+      font-size: 18px;
+      color: black; }
+    body .allMenu .aboutTable {
+      margin-top: 50px; }
+  body .contactPage .row {
+    margin: 20px; }
+  body .contactPage .googleMap {
+    margin-top: 20px; }
+  body button {
+    width: 100px; }
+  body .projects .col-md {
+    margin: 40px; }
+  body .projects .row {
+    margin-bottom: 90px; }
+
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,359 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="{% static 'sass/index.css' %}">
+</head>
+<body >
+	<div class="container allMenu">
+	    
+	    <div class="row">
+           <div class="col-3 allMenuItems">
+             <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+             <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true"><i class="fas fa-house-user"></i> Home</a>
+             
+             <a class="nav-link" id="v-pills-about-tab" data-toggle="pill" href="#v-pills-about" role="tab" aria-controls="v-pills-about" aria-selected="false"><i class="fas fa-address-card"></i> About me</a>
+             
+
+             <a class="nav-link" id="v-pills-projects-tab" data-toggle="pill" href="#v-pills-projects" role="tab" aria-controls="v-pills-projects" aria-selected="false"><i class="fas fa-project-diagram"></i> Some Pojects</a>
+             <a class="nav-link" id="v-pills-documents-tab" data-toggle="pill" href="#v-pills-documents" role="tab" aria-controls="v-pills-documents" aria-selected="false"><i class="fas fa-people-arrows"></i> My Personality</a>
+             
+           
+            
+             <a class="nav-link" id="v-pills-contact-tab" data-toggle="pill" href="#v-pills-contact" role="tab" aria-controls="v-pills-contact" aria-selected="false"><i class="fas fa-address-book"></i> Contact with me</a>
+             </div>
+           </div>
+           <div class="col-9">
+            <div class="tab-content" id="v-pills-tabContent">
+                <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                    <div class="row"> 
+                        <div id="piechart" class="col-md-6"></div>
+                        <div id="piechart01" class="col-md-6"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2">
+                            <a href="https://sass-lang.com/"><button type="button" class="btn btn-outline-primary"><i class="fab fa-sass fa-2x"></i> Sass/SCSS</button></a>
+                        </div>
+                        <div class="col-md-2">
+                            <a href="https://www.w3schools.com/html/"><button type="button" class="btn btn-outline-primary"><i class="fas fa-code fa-2x"></i> HTML/CSS</button></a>
+                        </div>
+                        <div class="col-md-2">
+                            <a href="https://www.python.org/"><button type="button" class="btn btn-outline-primary"><i class="fab fa-python fa-2x"></i><br> Python</button></a>
+                        </div>
+                        <div class="col-md-2">
+                            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><button type="button" class="btn btn-outline-primary"><i class="fab fa-js-square fa-2x"></i><br> JavaScript</button></a>
+                        </div>
+                        <div class="col-md-2">
+                            <a href="https://vuejs.org/"><button type="button" class="btn btn-outline-primary"><i class="fab fa-vuejs fa-2x"></i><br> Vue.js </button></a>
+                        </div>
+                        <div class="col-md-2">
+                            <a href="https://www.php.net/"><button type="button" class="btn btn-outline-primary"><i class="fab fa-php fa-2x"></i><br> Php </button></a>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+
+                <div class="tab-pane fade aboutPage" id="v-pills-about" role="tabpanel" aria-labelledby="v-pills-about-tab">
+                	
+                	<div class="row">
+                		<div class="col-md-3">
+                	        <img class="rounded-lg img-fluid" src="{% static 'img/my_pic.png' %}" />
+                	    </div>
+                	    <div class="col-md-9">
+                	    	<h1>Urinov Azizbek </h1>
+                	    	<p>Hello, everybody. <br>
+                	    	My name is Urinov Azizbek. I am the owner of CodingNewBie YouTube channal and a few websites like
+                	        FSS.kr (Halal Foods) , Muslims.kr (Information based website) , Namsu (reworked website for Namangan State University) ,
+                	        Simple VoiceGame web app , of course this portfolio website (CodingNewBie.uz) and etc. </p>
+                	    </div>
+                	</div>
+                	<div class="row aboutTable">
+                		<h2>Educational backgrounds</h2>
+                		<table class="table table-hover">
+							<thead>
+							<tr>
+							  <th scope="col">School Names</th>
+							  <th scope="col">Department</th>
+							  <th scope="col">Years of Graduation</th>
+							  
+							</tr>
+							</thead>
+							<tbody>
+							<tr>
+							  <th scope="row">School 53, Chartak, <br> Namangan, Uzbekistan</th>
+							  <td>Mathematics</td>
+							  <td>2004 - 2013</td>
+							  
+							</tr>
+							<tr>
+							  <th scope="row">Chartak Lyceum, <br>Namangan, Uzbekistan</th>
+							  <td>Mathematics and Physics</td>
+							  <td>2013 - 2016</td>
+							  
+							</tr>
+							<tr>
+							  <th scope="row">Dongseo University <br> Busan, South Korea.</th>
+							  <td >Computer Engineering <br> (Web development)</td>
+							  <td>2016 - 2020</td>
+							</tr>
+							</tbody>
+							</table>
+                		
+                	</div>
+
+                </div>
+                
+                <div class="tab-pane fade projects" id="v-pills-projects" role="tabpanel" aria-labelledby="v-pills-projects-tab">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card" style="width: 16rem;">
+                              <img src="{% static 'img/portfolio.jpg' %}" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h5 class="card-title">Portfolio</h5>
+                                <p class="card-text">My personal portfolio web called codingnewbie.uz.  </p>
+                                <a href="https://github.com/Al-Azizbek" class="btn btn-primary">Go Project</a>
+                              </div>
+                            </div>
+                            
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card" style="width: 16rem;">
+                              <img src="{% static 'img/voice.jpeg' %}" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h5 class="card-title">Voice web app</h5>
+                                <p class="card-text">Simple voice game app with different options.</p>
+                                <a href="https://github.com/Al-Azizbek/vue_js_simple_voice_game" class="btn btn-primary">Go Project</a>
+                              </div>
+                            </div>
+                            
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card" style="width: 16rem;">
+                              <img src="{% static 'img/namsu.jpg' %}" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h5 class="card-title">NamSu.uz</h5>
+                                <p class="card-text"> Namangan University reworked website.</p>
+                                <a href="https://github.com/Al-Azizbek/NamDU_University_website_Django" class="btn btn-primary">Go Project</a>
+                              </div>
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                    <div class="row bottom-col">
+                        <div class="col-md-4">
+                            <div class="card" style="width: 16rem;">
+                              <img src="{% static 'img/fss.jpg' %}" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h5 class="card-title">Foreign Support System</h5>
+                                <p class="card-text">FSS is a information guide website.</p>
+                                <a href="https://github.com/Al-Azizbek/Muslim.kr_Django_Bootstrap-Begginer_level-" class="btn btn-primary">Go Project</a>
+                              </div>
+                            </div>
+                            
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card" style="width: 16rem;">
+                              <img src="{% static 'img/halal.jpg' %}" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h5 class="card-title">Halal Foods</h5>
+                                <p class="card-text">The website to help Muslims in Korea.</p>
+                                <a href="https://github.com/Al-Azizbek/Al-Azizbek-Halal_Food_-2017-Dec-18-Halal-Foods-" class="btn btn-primary">Go Project</a>
+                              </div>
+                            </div>
+                            
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card" style="width: 16rem;">
+                              <img src="{% static 'img/crawling.jpg' %}" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h5 class="card-title">Website Crawling</h5>
+                                <p class="card-text">Simple example to crawl shopping website.</p>
+                                <a href="https://github.com/Al-Azizbek/Crawling_shopping_website" class="btn btn-primary">Go Project</a>
+                              </div>
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+
+                </div>
+                <div class="tab-pane fade" id="v-pills-documents" role="tabpanel" aria-labelledby="v-pills-documents-tab">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                      <li class="nav-item">
+                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Character</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Hobbies</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Now/Future</a>
+                      </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                      <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                         <div class="row">
+                              <div class="col-md-3">
+                                  <img src="{% static 'img/character.jpg' %}" class="card-img-top" alt="rubik's cube pic">
+                              </div>
+                              <div class="col-md-9">
+                                  <p>Actually, my character is easy to understand just kind and creative. I don't like people who are too much noisy as well as rude. Because every time, I tried to be creative and active. So I want other people around me have to be like this.  </p>
+                              </div>
+                          </div>
+            
+                      </div>
+                      <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                           <div class="row">
+                              <div class="col-md-3">
+                                  <img src="{% static 'img/cube.jpg' %}" class="card-img-top" alt="rubik's cube pic">
+                              </div>
+                              <div class="col-md-9">
+                                  <p>Actually, i love all kind of hobbies like swimming, riding a bike, riding a horse, watching movies, playing games, etc. But the most my favourite one is solving Rubik's Cube. If i have free or stress time, I usually spend
+                                  my time to learn how to solve new type of Rubik's Cube or just solve old ones again and again. </p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                          <div class="row">
+                              <div class="col-md-3">
+                                  <img src="{% static 'img/future.jpg' %}" class="card-img-top" alt="rubik's cube pic">
+                              </div>
+                              <div class="col-md-9">
+                                  <p>So far I just spent my time to learn Web developing like CSS open-source libraries (Materialaze, Bootstrap
+                                  Foundation, Sementic UI), web frameworks (Django, Flask), some of programming languages in elementry level (
+                                  Python, JS, Php) and now I wanna learn more about how to work with databases (MySQL, SQLite, Oracle) and also some 
+                                  of data analysis. </p>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+                
+               
+                
+                <div class="tab-pane fade contactPage" id="v-pills-contact" role="tabpanel" aria-labelledby="v-pills-contact-tab">
+                  <div class="row">
+                   <div class="col-md-3">
+                	<div class="row">
+                		<div class="col">
+                			<a href="https://github.com/Al-Azizbek"><button type="button" class="btn btn-outline-primary"><i class="fab fa-github fa-3x"></i> Github  </button></a>
+                		</div>
+                    </div>
+                    <div class="row">
+                		<div class="col">
+                			<a href="https://www.instagram.com/?hl=en"><button type="button" class="btn btn-outline-primary"><i class="fab fa-instagram fa-3x"></i> Instagram</button></a>
+                		</div>
+                    </div>
+                     <div class="row">
+                		<div class="col">
+                			<a href="https://www.facebook.com/azizbek.urinov.73"><button type="button" class="btn btn-outline-primary"><i class="fab fa-facebook fa-3x"></i> Facebook</button></a>
+                		</div>
+                    </div>
+                     <div class="row">
+                		<div class="col">
+                			<a href=""><button type="button" class="btn btn-outline-primary"><i class="fab fa-telegram fa-3x"></i> Telegram</button></a>
+                		</div>
+                    </div>
+                     <div class="row">
+                		<div class="col">
+                			<a href="https://www.youtube.com/channel/UCpDwl7dIfkb-raayBfHm-8w?view_as=subscriber"><button type="button" class="btn btn-outline-primary"><i class="fab fa-youtube fa-3x"></i>YouTube</button></a>
+                		</div>
+                    </div>
+                   </div>
+                   <div class="col-md-9 googleMap ">
+                   	  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3262.5091837024165!2d129.0083708156597!3d35.14391996685806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3568ea3fa4df8c35%3A0x94ed0001e8a699f5!2sDongseo%20University!5e0!3m2!1sen!2skr!4v1588858112380!5m2!1sen!2skr" width="600" height="515" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                   </div>
+                 </div>
+
+                		
+		       
+                	
+                	
+                		
+               </div>
+           </div>
+       </div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/42de975b23.js" crossorigin="anonymous"></script>
+<script type="text/javascript">
+// Load google charts
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+// Draw the chart and set the chart values
+function drawChart() {
+  var data = google.visualization.arrayToDataTable([
+  ['Task', 'Hours per Day'],
+  ['JS', 4],
+  ['Python', 4],
+  
+  ['HTML/CSS', 7],
+  ['PHP', 3],
+  
+]);
+
+  // Optional; add a title and set the width and height of the chart
+  var options = {'title':'My Favourite Programming Languages', 'width':550, 'height':400};
+
+  // Display the chart inside the <div> element with id="piechart"
+  var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+  chart.draw(data, options);
+}
+</script>
+<script type="text/javascript">
+// Load google charts
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+// Draw the chart and set the chart values
+function drawChart() {
+  var data = google.visualization.arrayToDataTable([
+  ['Task', 'Hours per Day'],
+  ['Django', 4],
+  ['Sass/Less', 7],
+  ['Vue.js', 6],
+  ['Bootstrap', 8],
+  ['Materialze', 8],
+  
+  
+  
+]);
+
+  // Optional; add a title and set the width and height of the chart
+  var options = {'title':'My favourite frameworks, libraries etc', 'width':550, 'height':400};
+
+  // Display the chart inside the <div> element with id="piechart"
+  var chart = new google.visualization.PieChart(document.getElementById('piechart01'));
+  chart.draw(data, options);
+}
+</script>
+</body>
+<footer class="footer mt-auto py-3 btn-primary fixed-bottom">
+    <div class="container">
+        <p class="text-center" style="color: white;">&copy;Urinov Azizbek 2020</p>
+    </div>
+</footer>
+</html>
